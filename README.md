@@ -1,4 +1,4 @@
-# <a href="Barbeariapi.000.pe">Projeto-barbershop</a>
+# <a href="http:barbeariapi.000.pe">Projeto-barbershop</a>
 
 ![image](https://github.com/joao-biondi/Projeto-BarberShop/assets/119629224/6ae32746-06bd-45fd-998e-0f76a60e8a13)
 
