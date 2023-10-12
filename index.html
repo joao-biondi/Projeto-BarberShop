@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="css/main.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Barbearia p.i</title>
+</head>
+
+<body>
+	<!-- Primeira tela -->
+	<section id="Home">
+		<header>
+			<div class="interface">
+				<div class="logo">
+					<a href="#Home"><img src="images/p.i2.png" alt="logo-principal"></a>
+        </div> <!-- logo -->
+
+        <nav class="menu-desktop">
+          <ul class="navigation-items">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Nossa_Marca">Nossa Marca</a></li>
+            <li><a href="#Nossa_Unidade">Nossa Unidade</a></li>
+            <li><a href="#cabeloebarba">Cabelo & Barba</a></li>
+            <li><a href="#Contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div onclick="ativar()" id="btn-menu">
+          <span class="linha"></span>
+          <span class="linha"></span>
+          <span class="linha"></span>
+        </div>
+
+        <article class="menu-mobile" id="menu-mobile">
+          <nav class="navigation-items-mobile">
+            <a href="#Home">Home</a>
+            <a href="#Nossa_Marca">Nossa Marca</a>
+            <a href="#Nossa_Unidade">Nossa Unidade</a>
+            <a href="#cabeloebarba">Cabelo & Barba</a>
+            <a href="#Contato">Contato</a>
+          </nav>
+        </article><!--menu-mobile-->
+
+    </header>
+    <div class="logo-meio">
+      <img src="images/Banner.png" alt="logo-meio">
+    </div>
+  </section>
+  <!-- segunda tela -->
+  <section id="Nossa_Marca">
+    <h1 class="Marca">Nossa Marca</h1>
+    <div class="container">
+      <p class="text">
+        A marca "Barbearia Studio Aguiar" é uma referência no mundo da
+        barbearia, conhecida por oferecer serviços de qualidade excepcional
+        aos seus clientes. Com uma combinação perfeita entre tradição e
+        inovação, a Barbearia Studio Aguiar é um destino ideal para homens que
+        desejam cuidar da aparência e relaxar em um ambiente acolhedor e
+        moderno. Os profissionais da Barbearia Studio Aguiar são especialistas em
+        cortes de cabelo e barba, dominando técnicas clássicas e
+        contemporâneas. Eles estão sempre atualizados com as últimas
+        tendências e estilos, garantindo que cada cliente saia satisfeito com
+        um visual impecável. Além dos serviços tradicionais de barbearia, a
+        BrotherHD oferece uma experiência completa para seus clientes. Com uma
+        atmosfera descontraída e amigável, a barbearia disponibiliza uma
+        variedade de opções, como tratamentos para a pele, massagens
+        relaxantes e cuidados personalizados para o cabelo.
+      </p>
+    </div>
+  </section>
+  <!-- terceira tela -->
+  <section id="Nossa_Unidade">
+    <h1 class="Unidade">Nossa Unidade</h1>
+    <div class="tabela">
+      <h1 class="vila">Vilas Oficinas</h1>
+      <img src="images/TEB.png" alt="" class="teb" />
+      <p class="subvila">
+        Rua dos Ferroviários, 761<br />
+        Cajuru|Curitiba|82920-100<br />
+        <span>Telefone: (41) 98469-8501</span>
+      </p>
+      <hr />
+      <a href="https://www.google.com/maps/place/Brotherhood+Club+Barbearia/@-25.450316,-49.2075279,15z/data=!4m14!1m7!3m6!1s0x94dce58c94c3cbdf:0xd876518f0b785d20!2sBrotherhood+Club        +Barbearia!8m2!3d-25.450316!4d-49.2075279!16s%2Fg%2F11t80l18hv!3m5!1s0x94dce58c94c3cbdf:0xd876518f0b785d20!8m2!3d-25.450316!4d-49.2075279!16s%2Fg%2F11t80l18hv"
+        target="_blank" class="btn btn-white btn- animate">Veja no Mapa</a>
+      <img src="images/local.png" alt="local" class="local" />
+      <p class="descricao">
+        Segunda à Sexta 10h às 20h<br />
+        Sábado das 09h às 18h
+      </p>
+    </div>
+  </section>
+  <!-- quarta tela -->
+
+  <section id="cabeloebarba">
+    <h1 class="cb">Cabelo & Barba</h1>
+    <div class="ceb">
+      <div class="img-ceb">
+        <img src="images/c&b.png" alt="ceb" />
+      </div>
+
+      <div class="txt-app-ceb">
+        <p>Agende um horário conosco clicando nos ícones abaixo,<br />e faça o
+          download do nosso aplicativo.
+        </p>
+
+        <img src="images/apps.png" alt="apps" />
+      </div>
+    </div>
+  </section>
+  <!-- ultima tela -->
+  <section id="Contato">
+    <h1 class="Contato">Contato</h1>
+    <form id="cad-usuario-form">
+      <div class="input-single">
+        <input class="input" type="text" name="nome" id="nome" required>
+        <label for="nome">Seu nome completo</label>
+      </div>
+      <div class="input-single">
+        <input class="input" type="text" name="email" id="email" required>
+        <label for="email">Seu e-mail</label>
+      </div>
+      <div class="input-single">
+        <input class="input" type="tef" name="telefone" id="telefone" required maxlength="15"
+          onkeyup="handlePhone(event)">
+        <label for="telefone">Seu telefone</label>
+      </div>
+      <div class="input-single">
+        <input class="input" type="text" name="assunto" id="assunto" required>
+        <label for="assunto">Assunto</label>
+      </div>
+      <div class="btn-final"><input type="submit" value="Enviar" id="cad-usuario-btn"></div>
+    </form>
+  </section>
+
+  <footer class="rodape">
+    &copy;Todos os direitos reservados. projeto feito sem fins lucrativos.
+  </footer>
+  <script src="assets/scroll.js"></script>
+  <script src="assets/menu.js"></script>
+  <script src="assets/mask.js"></script>
+  <script src="assets/sweetalert2.js"></script>
+  <script src="assets/custom.js"></script>
+  <script src="assets/scroll.mobile.js"></script>
+</body>
+
+</html>
